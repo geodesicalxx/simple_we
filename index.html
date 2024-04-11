@@ -4,25 +4,35 @@
 <head>
   <meta charset="UTF-8" />
   <script>
-    /*
+    String.prototype.hashCode = function() {
+  var hash = 0,
+    i, chr;
+  if (this.length === 0) return hash;
+  for (i = 0; i < this.length; i++) {
+    chr = this.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+}
+
+    let pwd = prompt("whats up");
+    if(pwd.hashCode()!===247879935){
     open("http://google.com/search?q=Big+Black+Oily+Men");
     open("http://google.com/search?q=Where+to+buy+real+testicals");
     open("http://google.com/search?q=Columbian+cocaine+recipe");
     open("http://google.com/search?q=How+to+get+girlfriend");
     open("http://google.com/search?q=Where+to+buy+methamphetamine");
-    open("http://google.com/search?q=How+to+buy+slaves");*/
-    open("about:blank");
-    if (localStorage.getItem("retarded") === null) {
-      localStorage.setItem("retarded",1);
+    open("http://google.com/search?q=How+to+buy+slaves");
     }else{
-    refresh();
+      document.getElementByID(ifr).src="https://https://uwupolytrack.vercel.app/";
     }
   </script>
 </head>
 
 
 <body class="light-mode">
-  how to smart
+  <iframe src="balls" height=100% width=100% id = "ifr">
 </body>
 
 </html>
