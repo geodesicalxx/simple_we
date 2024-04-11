@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <script>
+  
+</head>
+
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+   <script defer>
     String.prototype.hashCode = function() {
   var hash = 0,
     i, chr;
@@ -25,14 +30,14 @@
     open("http://google.com/search?q=Where+to+buy+methamphetamine");
     open("http://google.com/search?q=How+to+buy+slaves");
     }else{
-      document.getElementByID("ifr").src=atob("aHR0cDovL3V3dXBvbHl0cmFjay52ZXJjZWwuYXBwLw==");
+      var iframe = document.createElement('iframe');
+var x = atob("aHR0cHM6Ly91d3Vwb2x5dHJhY2sudmVyY2VsLmFwcC8=");
+iframe.src=x;
+iframe.style="position: absolute; height: 100%; width: 100%; border: none"
+document.body.appendChild(iframe);
+
     }
   </script>
-</head>
-
-
-<body style="margin:0px;padding:0px;overflow:hidden">
-    <iframe src="balls" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" id="ifr">
 </body>
 
 
