@@ -85,7 +85,11 @@ if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){ifra
 if(pwd=="rgb"){var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
 if(pwd=="ubg"){x="https://unglockedgxmes.vercel.app/";}
 if(pwd=="ts3"){
-    x="/ts3/index.html"
+    let str = window.location.href;
+    while(str[str.length-1]!='/'){
+        str = str.substring(0, str.length - 1);
+    }
+    x=str+"/ts3/index.html"
 }
 iframe.src=x;
 iframe.setAttribute('allowFullScreen', '');
