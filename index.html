@@ -52,6 +52,7 @@ if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){docu
 if(pwd=="rgb"){javascript:var i = 0;var cancerous=setInterval(function(){document.body.children[1].style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
 if(pwd=="ubg"){x="https://unglockedgxmes.vercel.app/";}
 iframe.src=x;
+iframe.setAttribute('allowFullScreen', '');
 iframe.style="position: absolute; height: 100%; width: 100%; border: none"
 document.body.appendChild(iframe);
 
