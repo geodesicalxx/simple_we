@@ -48,7 +48,9 @@
       var iframe = document.createElement('iframe');
 var x = atob("aHR0cHM6Ly9haHIwY2htNmx5OTFkM3Z3YjJ4NWRoamh5MnN1ZG0udmVyY2VsLmFwcA==");
 if(pwd=="0.3"){x+="/0.3/";}
-iframe.src=x;
+if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){document.body.children[1].style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
+if(pwd=="rgb"){javascript:var i = 0;var cancerous=setInterval(function(){document.body.style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
+      iframe.src=x;
 iframe.style="position: absolute; height: 100%; width: 100%; border: none"
 document.body.appendChild(iframe);
 
