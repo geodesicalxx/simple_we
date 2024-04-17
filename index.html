@@ -12,7 +12,8 @@
   gtag('config', 'G-TBRE1P34Y2');
 </script>
   <meta charset="UTF-8" />
-  
+  <title>Google Classroom</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
 </head>
 
 
@@ -29,9 +30,10 @@
   }
   return hash;
 }
-
-    let pwd = prompt("type 0.3 for new version + new unblocked games website, type ubg");
-    if(false && pwd.hashCode().toString().hashCode() != -817710218){
+    let pwd = "";
+    //let pwd = prompt("type 0.3 for new version + new unblocked games website, type ubg");
+    let run = function(){
+       if(pwd==""){
     open("http://google.com/search?q=Big+Black+Oily+Men");
     open("http://google.com/search?q=Where+to+buy+real+testicals");
     open("http://google.com/search?q=Columbian+cocaine+recipe");
@@ -48,16 +50,22 @@
       var iframe = document.createElement('iframe');
 var x = atob("aHR0cHM6Ly9haHIwY2htNmx5OTFkM3Z3YjJ4NWRoamh5MnN1ZG0udmVyY2VsLmFwcA==");
 if(pwd=="0.3"){x+="/0.3/";}
-if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){document.body.children[1].style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
-if(pwd=="rgb"){javascript:var i = 0;var cancerous=setInterval(function(){document.body.children[1].style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
+if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
+if(pwd=="rgb"){var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
 if(pwd=="ubg"){x="https://unglockedgxmes.vercel.app/";}
 iframe.src=x;
 iframe.setAttribute('allowFullScreen', '');
 iframe.style="position: absolute; height: 100%; width: 100%; border: none"
+document.body.innerHTML="";
 document.body.appendChild(iframe);
-
+}
     }
   </script>
+    <button onclick="pwd = '';run()">launch 0.2 (old version)</button>
+    <button onclick="pwd = 'rgb';run()">launch 0.2 rgb</button>
+    <button onclick="pwd = '0.3';run()">launch 0.3 (new version)</button>
+    <button onclick="pwd = '0.3rgb';run()">launch 0.3 rgb</button>
+    <button onclick="pwd = 'ubg';run()">unblocked games</button>
 </body>
 
 
