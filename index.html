@@ -81,8 +81,8 @@
       var iframe = document.createElement('iframe');
 var x = atob("aHR0cHM6Ly9haHIwY2htNmx5OTFkM3Z3YjJ4NWRoamh5MnN1ZG0udmVyY2VsLmFwcA==");
 if(pwd=="0.3"){x+="/0.3/";}
-if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
-if(pwd=="rgb"){var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg)";i+=6;if(i>360){i=0;}},16)}
+if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
+if(pwd=="rgb"){var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
 if(pwd=="ubg"){x="https://unglockedgxmes.vercel.app/";}
 iframe.src=x;
 iframe.setAttribute('allowFullScreen', '');
