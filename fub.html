@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <script>
+    function pass(ingoing) {
+        console.log(ingoing);
+        return ingoing;
+      }
+      function parseSource(source) {
+        const info_map = JSON.parse(source.match(/_docs_flag_initialData=(?<data>{.*?});<\/script>/).groups.data);
+        const token = info_map.info_params.token;
+        let my_query_params = new URLSearchParams();
+        if (info_map["docs-crq"]){
+          let url_search_params = new URLSearchParams(info_map["docs-crq"]);
+          if (url_search_params.get("hr_submission")){
+            my_query_params.append("hr_submission", url_search_params.get("hr_submission"));
+          }
+        }
+        const url = "https://docs.google.com"  + info_map["docs-crp"] + (my_query_params.toString() ? "?" + my_query_params.toString(): "");
+        return {token: token, url: url};
+      }
+      window.addEventListener("load", () => {
+      document.querySelector("#yourthing").addEventListener("click", () => {
+        try {
+          const source_info = parseSource(document.querySelector("#form_source").value);
+          document.querySelector("#token").value = source_info.token;
+          document.querySelector("#greatest_form").setAttribute("action", source_info.url);
+          document.querySelector("#sub").click();
+        } catch(e) {
+          document.querySelector("#stats").textContent = e.toString();
+        }
+      });
+      });
+  </script>
+</head>
+
+<body>
+<h2>ONLY IF YOU KNOW WHAT YOU'RE DOING</h2>
+  <h3>Paste form source here:</h3>
+  <textarea id="form_source"></textarea>
+  <button id="yourthing">Do your thing!</button>
+  <br>
+  <p id="stats"></p>
+  <form target="_blank" method="POST" id="greatest_form">
+    <input type="hidden" name="token" id="token">
+    <input type="hidden" name="tz_offset" value="120">
+    <input type="submit" style="display: none;" value="Submit" id="sub">
+  </form>
+</body>
+
+</html>
