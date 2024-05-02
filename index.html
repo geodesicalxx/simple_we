@@ -83,7 +83,13 @@ var x = atob("aHR0cHM6Ly9haHIwY2htNmx5OTFkM3Z3YjJ4NWRoamh5MnN1ZG0udmVyY2VsLmFwcA
 if(pwd=="0.3"){x+="/0.3/";}
 if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
 if(pwd=="rgb"){var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
-if(pwd=="ubg"){x="https://unglockedgxmes.vercel.app/";}
+if(pwd=="mc"){
+    let str = window.location.href;
+    while(str[str.length-1]!='/'){
+        str = str.substring(0, str.length - 1);
+    }
+    x=str+"/minekampf/index.html"
+}
 if(pwd=="ts3"){
     let str = window.location.href;
     while(str[str.length-1]!='/'){
@@ -107,7 +113,7 @@ document.body.appendChild(iframe);
     <button class=button onclick="pwd = '0.3';run()">launch 0.3 (new version)</button>
     <button class=button onclick="window.open('fub.html')">lmgf bypass</button><br><br>
     <button class=button onclick="pwd = '0.3rgb';run()">launch 0.3 rgb</button>
-    <button class=button onclick="pwd = 'ubg';run()">unblocked games</button>
+    <button class=button onclick="pwd = 'mc';run()">minecraft 1.8.8</button>
     
     <!--<button class=button id = balls onclick="pwd = 'gayporn';run()">click?</button>!-->
     </div><div style="margin-left:50px">
@@ -115,7 +121,7 @@ document.body.appendChild(iframe);
           add minecraft :skull:</br>
     Changelog:
         2/5/2024
-        fixed time shooter not saving
+        fixed time shooter not saving&temoparily removed ubg to be fixed&minecraft
     </div>
     <p hidden=true>
     sup
