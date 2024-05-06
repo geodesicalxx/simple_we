@@ -9,6 +9,9 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-TBRE1P34Y2');
+        window.addEventListener('beforeunload', (event) => {
+  event.returnValue = `Are you sure you want to leave?`;
+});
     </script>
     
     <meta charset="UTF-8" />
@@ -104,6 +107,7 @@
             <!--<button class=button id = balls onclick="pwd = 'gayporn';run()">click?</button>!-->
         <div ><p>
             Changelog:<br>
+            6/5/2024 - add close dialog <br>
             3/5/2024 - added form, cleaned up code, added bg<br>
             2/5/2024 - fixed time shooter not saving&temoparily removed ubg to be fixed & added minecraft<br>
 
