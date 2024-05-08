@@ -6634,7 +6634,7 @@ function getRoutes() {
     },
     {
       path: RouteEnum.Singleplayer,
-      component: () => __vitePreload(() => import("./VSingleplayer-990a8b35.js"), true ? ["assets/VSingleplayer-990a8b35.js","assets/VSingleplayer-7c717792.css"] : void 0)
+      component: () => __vitePreload(() => import("VSingleplayer-990a8b35.js"), true ? ["assets/VSingleplayer-990a8b35.js","assets/VSingleplayer-7c717792.css"] : void 0)
     }
   ];
   return websiteAndExtensionRoutes;
