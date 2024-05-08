@@ -62,7 +62,14 @@
            var x = atob("aHR0cHM6Ly9haHIwY2htNmx5OTFkM3Z3YjJ4NWRoamh5MnN1ZG0udmVyY2VsLmFwcA==");
            if(pwd=="0.3"){x+="/0.3/";}
            if(pwd=="0.3rgb"){x+="/0.3/";var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
-           if(pwd=="rgb"){var i = 0;var cancerous=setInterval(function(){iframe.style.filter="hue-rotate("+i+"deg) saturate("+(200+(100*Math.sin(i)))+"%)";i+=6;if(i>360){i=0;}},16)}
+           if(pwd=="icedodo"){
+               let str = window.location.href;
+               while(str[str.length-1]!='/'){
+                   str = str.substring(0, str.length - 1);
+               }
+               x=str+"/specialVideos/icedoddo/index.html"
+               window.location.href=x;   
+           }
            if(pwd=="mc"){
                let str = window.location.href;
                while(str[str.length-1]!='/'){
@@ -98,7 +105,7 @@
         <div style="position:absolute;z-index: 3" >
             <button class=button onclick="pwd = '';run()">launch 0.2 (original)</button>
             <button class=button onclick="pwd = 'ts3';run()">time shooter 3 swat</button><br><br>
-            <button class=button onclick="pwd = 'rgb';run()">launch 0.2 rgb</button>
+            <button class=button onclick="pwd = 'icedodo';run()">ice dodo :O</button>
             <button class=button onclick="window.open('ane.html')">disable goguardian</button><br><br>
             <button class=button onclick="pwd = '0.3';run()">launch 0.3 (new version)</button>
             <button class=button onclick="window.open('fub.html')">lmgf bypass</button><br><br>
@@ -109,6 +116,7 @@
             <!--<button class=button id = balls onclick="pwd = 'gayporn';run()">click?</button>!-->
         <div ><p>
             Changelog:<br>
+            8/5/2024 - Ice dodo<br>
             6/5/2024 - add close dialog <br>
             3/5/2024 - added form, cleaned up code, added bg<br>
             2/5/2024 - fixed time shooter not saving&temoparily removed ubg to be fixed & added minecraft<br>
