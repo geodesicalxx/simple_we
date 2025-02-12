@@ -11,9 +11,9 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-TBRE1P34Y2');
-        window.addEventListener('beforeunload', (event) => {
-  event.returnValue = `Are you sure you want to leave?`;
-});
+        var cancelled = 0;
+        var ok = function(e){if(cancelled == 0)event.returnValue = `Are you sure you want to leave?`};
+        balls = window.addEventListener('beforeunload', ok);
     </script>
     
     <meta charset="UTF-8" />
@@ -92,6 +92,10 @@
                }
                x=str+"/ts3/index.html"
            }
+           if(pwd=="celest"){
+                cancelled = 1;
+                window.location.href = "/celeste-wasm/home.html"
+           }
            iframe.src=x;
            iframe.setAttribute('allowFullScreen', '');
            iframe.style="position: absolute; height: 100%; width: 100%; border: none"
@@ -111,18 +115,20 @@
 		</ul>
         <div style="position:absolute;z-index: 3" >
             <button class=button onclick="pwd = '';run()">launch 0.2 (original)</button>
-            <button class=button onclick="pwd = 'ts3';run()">time shooter 3 swat</button><br><br>
+            <button class=button onclick="pwd = 'ts3';run()">time shooter 3 swat</button><br>
             <button class=button onclick="pwd = 'icedodo';run()">ice dodo :O</button>
-            <button class=button onclick="window.open('ane.html')">disable goguardian (broken)</button><br><br>
+            <button class=button onclick="window.open('ane.html')">disable goguardian (broken)</button><br>
             <button class=button onclick="pwd = '0.3';run()">launch 0.3 (new version)</button>
-            <button class=button onclick="window.open('fub.html')">lmgf bypass</button><br><br>
+            <button class=button onclick="window.open('fub.html')">lmgf bypass</button><br>
             <button class=button onclick="pwd = 'cc';run()">cookie clicker</button>
-            <button class=button onclick="pwd = 'mc';run()">minecraft 1.8.8</button><br><br>
+            <button class=button onclick="pwd = 'mc';run()">minecraft 1.8.8</button>
+            <button class=button onclick="pwd = 'celest';run()">celeste</button><br><br>
             <a href="https://forms.gle/DoQV6Dpj397fAbMU9"><button class=button  >bug report/game request/support</button></a>
 
             <!--<button class=button id = balls onclick="pwd = 'gayporn';run()">click?</button>!-->
         <div ><p>
             Changelog:<br>
+            feb 12 2025 im no longer retarded, add celeste
 	    3/6/2024 - slightly changed directions for diable goguarian <br>
             8/5/2024 - Ice dodo, cookie clicker(now its fixed :<) I forgor a fucking slash<br>
             6/5/2024 - add close dialog <br>
