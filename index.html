@@ -95,6 +95,13 @@
            if(pwd=="celest"){
                 cancelled = 1;
                 window.location.href = "/celeste-wasm/home.html"
+           }if(pwd=="selenite"){
+                iframe.src="https://peletiaek.netlify.app/";
+                iframe.setAttribute('allowFullScreen', '');
+                iframe.style="position: absolute; height: 100%; width: 100%; border: none"
+                document.body.innerHTML=""; 
+               document.body.appendChild(iframe);
+               return;
            }
            iframe.src=x;
            iframe.setAttribute('allowFullScreen', '');
@@ -119,6 +126,7 @@
             <button class=button onclick="pwd = 'icedodo';run()">ice dodo :O</button>
             <button class=button onclick="window.open('ane.html')">disable goguardian (broken)</button><br>
             <button class=button onclick="pwd = '0.3';run()">launch 0.3 (new version)</button>
+            <button class=button onclick="pwd = 'selenite';run()">selenite</button>
             <button class=button onclick="window.open('fub.html')">lmgf bypass</button><br>
             <button class=button onclick="pwd = 'cc';run()">cookie clicker</button>
             <button class=button onclick="pwd = 'mc';run()">minecraft 1.8.8</button>
