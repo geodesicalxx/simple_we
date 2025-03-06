@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .button {
     background-color: transparent;
     color: black;
@@ -66,6 +71,7 @@ body {
 
 .box-area {
 	position: fixed;
+	background-attachment: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
