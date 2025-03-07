@@ -24,6 +24,22 @@
     color: hotpink;
     border-color: hotpink;
 }
+
+.log{
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.01);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /*        div {
   margin-top: 50px;
   margin-left: 50px;
