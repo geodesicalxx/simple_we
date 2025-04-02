@@ -1,6 +1,12 @@
 
 var pwd = "";
 
+document.addEventListener('keydown', function(event) {
+    if (event.key === '+') {
+        window.location.href = 'https://classroom.google.com/';
+    }
+});
+
 function run(){
     // if(pwd=="gayporn"){
     //     open("http://google.com/search?q=Big+Black+Oily+Men");
