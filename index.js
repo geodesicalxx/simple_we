@@ -2,7 +2,7 @@
 var pwd = "";
 
 document.addEventListener('keydown', function(event) {
-    if (event.key === '+') {
+    if (event.key === '=') {
         cancelled = 1;
         window.location.href = 'https://classroom.google.com/';
     }
