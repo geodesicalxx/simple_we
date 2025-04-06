@@ -19,7 +19,8 @@ function run(){
     var x = atob("aHR0cHM6Ly9haHIwY2htNmx5OTFkM3Z3YjJ4NWRoamh5MnN1ZG0udmVyY2VsLmFwcA==");
 
     if(pwd=="0.3"){x+="/0.3/";}
-    if(pwd== "0.2" || pwd == "0.3"){
+    if(pwd=="0.4"){x+="/pt4/";}
+    if(pwd== "0.2" || pwd == "0.3" || pwd == "0.4"){
         iframe.src = x;
     }
 
