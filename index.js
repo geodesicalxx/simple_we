@@ -58,6 +58,10 @@ function run(){
          iframe.src="https://peletiaek.netlify.app/";
     }
 
+     if(pwd=="0.4"){
+         iframe.src="https://karmayxzu.github.io/dQw4w9WgXcQ/";
+    }
+    
     iframe.setAttribute('allowFullScreen', '');
     iframe.style="position: absolute; height: 100%; width: 100%; border: none"
     document.body.innerHTML="";
