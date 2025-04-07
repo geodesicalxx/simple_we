@@ -84,9 +84,15 @@ body {
 	margin-top: 20%;
 }*/
 .animation-area {
-	background: linear-gradient(to left, #8942a8, #ba382f);
-	width: 100%;
-	height: 150vh;
+	position: absolute;
+	top: 0;
+   	left: 0;
+    	height: 150vh;
+    	width: 100%;
+    	background: linear-gradient(45deg, red, purple, orange);
+    	background-size: 300% 300%;
+    	animation: color 10s ease-in-out infinite;
+    	z-index: -1;
 }
 
 .box-area {
@@ -145,6 +151,17 @@ body {
 	width: 110px;
 	height: 110px;
 	animation-delay: 3.5s;
+}
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 @keyframes animate {
 	0% {
