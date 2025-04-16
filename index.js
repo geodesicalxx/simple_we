@@ -47,6 +47,12 @@ function run(){
         x=str+"/mc/index.html"
         window.location.href=x;
     }
+    if(pwd=="mc1.12"){
+        cancelled = 1;
+        x=str+"/mc/eagl1.12.html"
+        alert("You can run this offline, press ctrl+s on the page to download the html file");
+        window.location.href=x;
+    }
     if(pwd=="celest"){
         cancelled = 1;
         window.location.href = "/celeste-wasm/home.html"
