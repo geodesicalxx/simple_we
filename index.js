@@ -20,7 +20,8 @@ function run(){
 
     if(pwd=="0.3"){x+="/0.3/";}
     if(pwd=="0.4"){x+="/pt4/";}
-    if(pwd== "0.2" || pwd == "0.3" || pwd == "0.4"){
+    if(pwd=="0.5"){x+="/0.5.0/";}
+    if(pwd== "0.2" || pwd == "0.3" || pwd == "0.5"){
         iframe.src = x;
     }
 
