@@ -1,0 +1,1 @@
+No Content: https://crazy-cattle3d.org/game/crazycattle3d/CrazyCattle3D.service.worker.js

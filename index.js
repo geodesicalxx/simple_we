@@ -64,6 +64,9 @@ function run(){
     if(pwd=="selenite"){
          iframe.src="https://peletiaek.netlify.app/";
     }
+    if(pwd=="cc3d"){
+        iframe.src=str+"/crazycattle3d/index.html"
+    }
     
     iframe.setAttribute('allowFullScreen', '');
     iframe.style="position: absolute; height: 100%; width: 100%; border: none"
