@@ -62,7 +62,7 @@ function run(){
         iframe.src=str+"/ts3/index.html"
     }
     if(pwd=="selenite"){
-         iframe.src="https://peletiaek.netlify.app/";
+         iframe.src="https://bruh-peach.vercel.app/";
     }
     if(pwd=="cc3d"){
         iframe.src=str+"/crazycattle3d/index.html"
